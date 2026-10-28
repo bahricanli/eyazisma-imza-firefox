@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "e-Yazışma İmza",
+  "version": "0.1.0",
+  "description": "Dernek portalındaki elektronik imza işlemini yerel kart uygulamasına bağlar.",
+  "permissions": [
+    "nativeMessaging"
+  ],
+  "icons": {
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://portal.lkd.org.tr/admin/correspondence/*",
+        "https://portal.pkd.org.tr/admin/correspondence/*"
+      ],
+      "js": [
+        "common.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "common.js",
+      "background.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "eyazisma-imza@bahricanli.com",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
+}
