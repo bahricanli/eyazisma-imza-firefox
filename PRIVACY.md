@@ -1,6 +1,6 @@
 # Gizlilik politikası
 
-e-Yazışma İmza — Bahricanlı. Güncelleme: 28 Ekim 2026.
+e-Yazışma İmza — BahriCanli. Güncelleme: 28 Ekim 2026.
 
 Eklenti, portal.lkd.org.tr ve portal.pkd.org.tr üzerindeki e-imza işlemini
 bilgisayarınızdaki e-Yazışma imza uygulamasına bağlamak için kullanılır.

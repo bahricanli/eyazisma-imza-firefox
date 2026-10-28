@@ -1,6 +1,6 @@
 # e-Yazışma İmza — Firefox
 
-Bahricanlı tarafından geliştirilen Firefox eklentisi. LKD/PKD portalındaki imza
+BahriCanli tarafından geliştirilen Firefox eklentisi. LKD/PKD portalındaki imza
 isteğini bilgisayarınızdaki yerel imza uygulamasına bağlar. İmza ekranı yerel
 uygulamada açılır; PIN eklentiye aktarılmaz.
 

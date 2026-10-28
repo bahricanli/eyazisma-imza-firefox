@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "e-Yazışma İmza",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dernek portalındaki elektronik imza işlemini yerel kart uygulamasına bağlar.",
   "permissions": [
     "nativeMessaging"
@@ -46,5 +46,6 @@
         ]
       }
     }
-  }
+  },
+  "author": "BahriCanli"
 }

@@ -1,7 +1,7 @@
 # Mağaza yayını
 
 Ad: e-Yazışma İmza
-Yayıncı: Bahricanlı
+Yayıncı: BahriCanli
 Kısa açıklama: Dernek portalındaki elektronik imza işlemini yerel kart uygulamasına bağlar.
 Kategori: Productivity / İş araçları
 
