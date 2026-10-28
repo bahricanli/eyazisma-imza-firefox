@@ -35,3 +35,9 @@ Yayıncı hesabı ve mağaza ekran görüntüleri yayın sırasında tamamlanmal
 
 Gizlilik sayfası: https://bahricanli.github.io/eyazisma-imza-firefox/
 Destek: https://github.com/bahricanli/eyazisma-imza-firefox/issues
+
+## Mağaza başvurusu
+
+0.1.1 sürümü 28 Ekim 2026'da incelemeye gönderildi.
+Listeleme: https://addons.mozilla.org/firefox/addon/eyazisma-imza/
+İnceleme tamamlanana kadar herkese açık sayfa erişilebilir olmayabilir.
