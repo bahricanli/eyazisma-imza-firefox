@@ -41,3 +41,7 @@ Destek: https://github.com/bahricanli/eyazisma-imza-firefox/issues
 0.1.1 sürümü 28 Ekim 2026'da incelemeye gönderildi.
 Listeleme: https://addons.mozilla.org/firefox/addon/eyazisma-imza/
 İnceleme tamamlanana kadar herkese açık sayfa erişilebilir olmayabilir.
+
+Firefox yayıncı görünen adı BahriCanli olarak kaydedildi. Mağaza açıklaması,
+gizlilik politikası, yerel uygulama kurulum/test talimatları, simge ve ekran
+görüntüsü eklendi. Başvuru durumu: İnceleme Bekliyor.
