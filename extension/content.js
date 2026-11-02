@@ -25,7 +25,7 @@
  },true);
  document.addEventListener('click',event => {
   const anchor=event.target.closest?.('[data-signing-link]');
-  if (!event.isTrusted || !ready || !anchor || !validSigningLink(anchor.dataset.signingLink,location.origin)) return;
+  if (!event.isTrusted || !ready || !anchor || !validSigningLink(anchor.dataset.signingLink,location.origin,[location.origin])) return;
   event.preventDefault();event.stopImmediatePropagation();launch(anchor.dataset.signingLink);
  },true);
  api.runtime.sendMessage({action:'status'}).then(result => {
@@ -34,6 +34,6 @@
   let pending;try {pending=sessionStorage.getItem(pendingKey);sessionStorage.removeItem(pendingKey);}catch {return;}
   if(pending!==location.pathname)return;
   const anchor=document.querySelector('[data-signing-link]');
-  if(anchor && validSigningLink(anchor.dataset.signingLink,location.origin))launch(anchor.dataset.signingLink);
+  if(anchor && validSigningLink(anchor.dataset.signingLink,location.origin,[location.origin]))launch(anchor.dataset.signingLink);
  }).catch(()=>{});
 })();

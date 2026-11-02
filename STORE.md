@@ -2,12 +2,14 @@
 
 Ad: e-Yazışma İmza
 Yayıncı: BahriCanli
-Kısa açıklama: Dernek portalındaki elektronik imza işlemini yerel kart uygulamasına bağlar.
+Kısa açıklama: e-Yazışma portallarındaki elektronik imza işlemini yerel kart uygulamasına bağlar.
 Kategori: Productivity / İş araçları
 
 ## Açıklama
 
-LKD ve PKD portallarında elektronik imzalama ekranını tek tıklamayla açın.
+e-Yazışma portallarında elektronik imzalama ekranını tek tıklamayla açın. eYazışma
+hizmetinde ve LKD, PKD portallarında hazır çalışır; kendi portalını kuran kurumlar
+adreslerini eklenti menüsünden ekleyebilir.
 Bilgisayarınıza kurulu e-Yazışma İmza uygulamasıyla bağlantı kurar; kart ve
 sertifika kontrol ekranını da eklenti menüsünden açabilirsiniz.
 
@@ -17,8 +19,12 @@ başına USB karta erişmez. PIN ve imza onayı yalnızca yerel uygulamada alın
 ## İzin gerekçeleri
 
 nativeMessaging: kurulu yerel uygulamanın durumunu kontrol etmek ve imza/kart
-ekranını açmak. İçerik betikleri: yalnız iki portalın yazışma sayfalarındaki
-imzalama düğmelerini bağlamak. Başka sitelere erişilmez.
+ekranını açmak. İçerik betikleri: hazır portallardaki imzalama düğmelerini
+bağlamak. activeTab: kullanıcı menüyü açtığında bulunduğu sitenin adresini portal
+ekleme için okumak. scripting ve isteğe bağlı https://*/* izni: proje açık kaynaktır
+ve her kurum kendi alan adında kurar, bu yüzden adresler önceden bilinemez. İzin
+kurulumda istenmez; kullanıcı "Bu portalı ekle" düğmesine bastığında tarayıcı
+yalnız o adres için onay ister. Onaylanmayan sitelere erişilmez.
 
 ## İnceleyici notları
 

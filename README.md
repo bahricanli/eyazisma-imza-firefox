@@ -1,8 +1,11 @@
 # e-Yazışma İmza — Firefox
 
-BahriCanli tarafından geliştirilen Firefox eklentisi. LKD/PKD portalındaki imza
+BahriCanli tarafından geliştirilen Firefox eklentisi. e-Yazışma portallarındaki imza
 isteğini bilgisayarınızdaki yerel imza uygulamasına bağlar. İmza ekranı yerel
 uygulamada açılır; PIN eklentiye aktarılmaz.
+
+Eklenti tek bir kuruma bağlı değildir. `*.eyazisma.com.tr`, portal.lkd.org.tr ve
+portal.pkd.org.tr hazır gelir; kendi portalını kuran her kurum da kullanılabilir.
 
 ## Kurulum
 
@@ -19,6 +22,23 @@ uygulamada açılır; PIN eklentiye aktarılmaz.
 
 Yerel uygulama kapalıysa eklenti gerektiğinde başlatır. Kart bulunamazsa yerel
 sürücü yardım ekranı açılır. Eklenti kurulu değilse portalın mevcut akışı çalışır.
+
+## Kendi portalınızı ekleyin
+
+Portalınızın sayfasındayken eklenti menüsünü açın ve “Bu portalı ekle” düğmesine
+basın. Tarayıcı yalnız o adres için izin ister, ardından sayfayı yenileyin. İlk
+imzada yerel uygulama da portala güvenip güvenmediğinizi ayrıca sorar. İzni
+tarayıcının eklenti ayarlarından istediğiniz zaman kaldırabilirsiniz.
+
+Eklenen portallar için yerel uygulamanın v0.2.10 veya daha yeni sürümü gerekir.
+
+Portal şu kurallara uymalıdır:
+
+- HTTPS ile sunulur.
+- İmza bağlantısı portalla aynı adrestedir: `https://portal.ornek.org/imza/<anahtar>`.
+  Anahtar 16-256 karakterdir (`A-Z a-z 0-9 _ -`), sorgu dizgisi veya parça içermez.
+- Bağlantı sayfada `data-signing-link` niteliğiyle verilir ya da imza
+  `pdf-signing-form` kimlikli formla başlatılır.
 
 ## Geliştirme
 

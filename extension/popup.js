@@ -11,5 +11,12 @@ async function call(action,link){
  }catch{setup.hidden=false;status.textContent='Yerel uygulama bağlantısı kurulamadı.';}
 }
 document.getElementById('cards').addEventListener('click',()=>call('cards'));
-document.getElementById('open').addEventListener('click',()=>{const input=document.getElementById('link');if(!validSigningLink(input.value)){status.textContent='Desteklenen portaldan geçerli bir imza bağlantısı girin.';return;}call('open',input.value);input.value='';});
+document.getElementById('open').addEventListener('click',()=>{const input=document.getElementById('link');grantedPortals(api.permissions).then(added=>{if(!validSigningLink(input.value,null,added)){status.textContent='Eklenmiş bir portaldan geçerli imza bağlantısı girin.';return;}call('open',input.value);input.value='';});});
+api.tabs.query({active:true,currentWindow:true}).then(async ([tab])=>{
+ let origin;try{const url=new URL(tab.url);if(url.protocol!=='https:')return;origin=url.origin;}catch{return;}
+ if(builtInPortal(origin)||(await grantedPortals(api.permissions)).includes(origin))return;
+ document.getElementById('origin').textContent=origin;document.getElementById('portal').hidden=false;
+ // The browser closes a Firefox popup for this prompt; the background registers the portal.
+ document.getElementById('add').addEventListener('click',()=>api.permissions.request({origins:[origin+'/*']}).then(granted=>{status.textContent=granted?'Portal eklendi. Sayfayı yenileyin.':'Portal eklenmedi.';document.getElementById('portal').hidden=granted;}));
+}).catch(()=>{});
 call('status');

@@ -1,9 +1,12 @@
 # Gizlilik politikası
 
-e-Yazışma İmza — BahriCanli. Güncelleme: 28 Ekim 2026.
+e-Yazışma İmza — BahriCanli. Güncelleme: 2 Kasım 2026.
 
-Eklenti, portal.lkd.org.tr ve portal.pkd.org.tr üzerindeki e-imza işlemini
-bilgisayarınızdaki e-Yazışma imza uygulamasına bağlamak için kullanılır.
+Eklenti, e-Yazışma portallarındaki e-imza işlemini bilgisayarınızdaki
+e-Yazışma imza uygulamasına bağlamak için kullanılır. Eklenti `*.eyazisma.com.tr`,
+portal.lkd.org.tr ve portal.pkd.org.tr adreslerinde hazır çalışır; kendi portalını
+kuran kurumların adresleri kullanıcı onayıyla tek tek eklenir. Onay verilmeyen
+sitelere erişilmez.
 
 - İmza bağlantısı yalnızca yerel uygulamaya Native Messaging üzerinden iletilir.
   Bu bağlantı geçici erişim anahtarıdır; eklenti onu diske veya günlüklere yazmaz.
