@@ -7,9 +7,11 @@ Kategori: Productivity / İş araçları
 
 ## Açıklama
 
-e-Yazışma portallarında elektronik imzalama ekranını tek tıklamayla açın. eYazışma
-hizmetinde ve LKD, PKD portallarında hazır çalışır; kendi portalını kuran kurumlar
-adreslerini eklenti menüsünden ekleyebilir.
+Açık kaynak dernek yazılımının elektronik imza bileşenidir. Dernek portalındaki
+e-Yazışma imzalama ekranını tek tıklamayla yerel uygulamada açar. Eklenti tek bir
+derneğe bağlı değildir: yazılımı kendi alan adında kuran her dernek portal adresini
+eklenti menüsünden ekleyebilir. eYazışma hizmetinde (*.eyazisma.com.tr) ekleme
+gerekmez.
 Bilgisayarınıza kurulu e-Yazışma İmza uygulamasıyla bağlantı kurar; kart ve
 sertifika kontrol ekranını da eklenti menüsünden açabilirsiniz.
 
