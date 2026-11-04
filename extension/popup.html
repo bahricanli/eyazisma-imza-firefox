@@ -1,6 +1,7 @@
 <!doctype html><html lang="tr"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>e-Yazışma İmza</title><link rel="stylesheet" href="popup.css"><body>
 <header><img src="icons/128.png" alt="" width="40" height="40"><div><h1>e-Yazışma İmza</h1><small>BahriCanli · <span id="version"></span></small></div></header>
 <p id="status" role="status">Yerel uygulama kontrol ediliyor…</p>
+<section id="builtin" hidden><h2>Site izni gerekli</h2><p>Eklentinin e-Yazışma portallarında imza düğmesini tanıması için site iznine ihtiyacı var.</p><button id="grant">İzin ver</button></section>
 <section id="portal" hidden><h2>Portal ekle</h2><p><strong id="origin"></strong> adresinde imza kullanmak için ekleyin. Yalnız güvendiğiniz kurumun portalını ekleyin.</p><button id="add">Bu portalı ekle</button></section>
 <button id="cards">Kart ve sertifikaları kontrol et</button>
 <details><summary>İmza bağlantısını elle aç</summary><label for="link">Portaldan aldığınız imza bağlantısı</label><input id="link" type="url" autocomplete="off" placeholder="https://portal…/imza/…"><button id="open">İmzalama ekranını aç</button></details>

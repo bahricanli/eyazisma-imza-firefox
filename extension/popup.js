@@ -19,4 +19,9 @@ api.tabs.query({active:true,currentWindow:true}).then(async ([tab])=>{
  // The browser closes a Firefox popup for this prompt; the background registers the portal.
  document.getElementById('add').addEventListener('click',()=>api.permissions.request({origins:[origin+'/*']}).then(granted=>{status.textContent=granted?'Portal eklendi. Sayfayı yenileyin.':'Portal eklenmedi.';document.getElementById('portal').hidden=granted;}));
 }).catch(()=>{});
+// Firefox may leave built-in portal access off (for example after an update); without it the signing button does nothing.
+const builtIn=[...new Set((api.runtime.getManifest().content_scripts||[]).flatMap(script=>script.matches))];
+api.permissions.contains({origins:builtIn}).then(granted=>{if(granted)return;document.getElementById('builtin').hidden=false;
+ document.getElementById('grant').addEventListener('click',()=>api.permissions.request({origins:builtIn}).then(ok=>{status.textContent=ok?'İzin verildi. Portal sayfasını yenileyin.':'İzin verilmedi.';document.getElementById('builtin').hidden=ok;}));
+}).catch(()=>{});
 call('status');

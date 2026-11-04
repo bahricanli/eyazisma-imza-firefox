@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "e-Yazışma İmza",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "e-Yazışma portallarındaki elektronik imza işlemini yerel kart uygulamasına bağlar.",
   "permissions": [
     "nativeMessaging",
